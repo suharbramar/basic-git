@@ -139,6 +139,22 @@ ssh-add -l
 
 	ssh -T git@github.com
 	
+
+git fetch [nama remote] [nama cabang] -> mengambil revisi (commit) dan tidak langsung di merge dengan repository lokal
+git pull [nama remote] [nama cabang]  -> mengambil revisi (commit) dan langsung melakukan penggabungan merge dengan repository lokal
 	
+- Cek log github 
+	git log github/master --oneline
+
+- Cek perbedaan repository lokal dan remote 
+	git diff master github/master
+
+
+- Menggabungkan commit dari repository remote dengan lokal?
+	git merge master github/master
+	
+- Clone Remote Repository
+	git clone https://github.com/petanikode/belajar-git.git [nama dir]
+
 visual studio (after setting ssh on windows)
 start-ssh-agent
